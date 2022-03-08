@@ -182,6 +182,7 @@ let blocks = document.getElementsByClassName("block"),
     parent_love = document.getElementsByClassName("parent_love")[0],
     body_text = document.getElementsByClassName("body_text")[0],
     body_center_love = document.getElementsByClassName("body_center_love")[0],
+    my_love = document.getElementsByClassName("body_bar")[0],
     timer = null,
     index = 0, //璁板綍鎷兼帴鐖卞績鐨勫姩鐢绘楠�
     clone_block; //鐢ㄤ簬鍏嬮殕鏂瑰潡
@@ -249,6 +250,8 @@ function Rise() {
             console.log("鍗囩┖瀹屾瘯");
 
         }
+        console.log(my_love)
+        my_love.style.visibility = "visible"; //鍗囩
         body_text.style.visibility = "visible"
         love.style.top = (love_top - distance)- 200 + "px";
 
